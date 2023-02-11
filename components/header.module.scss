@@ -1,0 +1,42 @@
+/* || HEADER STYLING */
+header.primary {
+  padding: 0.5em 3vw;
+  z-index: 2000;
+  background: linear-gradient(to right, var(--base-bgc), #f9f4e7);
+  box-shadow: 0 -8px 20px 0 #d3d3d3a3;
+  section {
+    flex-grow: 1;
+  }
+  .mid {
+    align-items: center;
+    display: flex;
+    nav {
+      width: 100%;
+      ul {
+        display: flex;
+        margin: 0;
+        gap: 1rem;
+        justify-content: center;
+
+        a {
+          color: #008a00;
+          text-decoration: none;
+          font-style: italic;
+          font-weight: bold;
+          font-size: clamp(15px, 1.1vw, 18px);
+          &:focus,
+          &:hover {
+            text-decoration: overline underline;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+    padding-left: 1vw;
+    color: var(--brand-color);
+  }
+}

@@ -1,17 +1,19 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import Script from 'next/script'
+import Head from "next/head";
+import Image from "next/image";
+import Script from "next/script";
+import Header from "./header";
 
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
-import Link from 'next/link'
+import styles from "./layout.module.scss";
+import utilStyles from "../styles/utils.module.scss";
+import Link from "next/link";
 
-const name = '[Your Name]'
-export const siteTitle = 'Next.js Sample Website'
+const name = "Erik Emanuel";
+export const siteTitle = "My Next Website";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div className="app">
+      {/* className={styles.container}> */}
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -34,12 +36,15 @@ export default function Layout({ children, home }) {
           console.log(`script loaded correctly, window.FB has been populated`)
         }
       />
-      <header className={styles.header}>
+      <div id="overlay"></div>
+      <Header />
+
+      {/* <header className={styles.header}>
         {home ? (
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/portrait-180x180.jpg"
               className={utilStyles.borderCircle}
               height={144}
               width={144}
@@ -66,13 +71,13 @@ export default function Layout({ children, home }) {
             </h2>
           </>
         )}
-      </header>
-      <main>{children}</main>
+      </header> */}
+      <main className={styles.container}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
           <Link href="/">← Back to home</Link>
         </div>
       )}
     </div>
-  )
+  );
 }

@@ -1,0 +1,123 @@
+.heading2Xl {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingXl {
+  font-size: 2rem;
+  line-height: 1.3;
+  font-weight: 800;
+  letter-spacing: -0.05rem;
+  margin: 1rem 0;
+}
+
+.headingLg {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+.headingMd {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.borderCircle {
+  border-radius: 9999px;
+}
+
+.colorInherit {
+  color: inherit;
+}
+
+.padding1px {
+  padding-top: 1px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.listItem {
+  margin: 0 0 1.25rem;
+}
+
+.lightText {
+  color: #666;
+}
+
+.ib {
+  display: inline-block;
+}
+.cap {
+  text-transform: capitalize;
+}
+.ltext {
+  text-align: left;
+}
+.rtext {
+  text-align: right;
+}
+.ctext {
+  text-align: center;
+}
+.padl05 {
+  padding-left: 0.5em;
+}
+.padl16 {
+  padding-left: 1.6em;
+}
+.smContainer {
+  width: clamp(100px, 96vw, var(--sm-width));
+  padding: 0 2vw;
+  margin: 0 auto;
+}
+.mdContainer {
+  width: clamp(200px, 100%, var(--md-width));
+  padding: 0 2vw;
+  margin: 0 auto;
+}
+.lgContainer {
+  width: clamp(300px, 100%, var(--lg-width));
+  margin: 0 auto;
+}
+.flx {
+  display: flex;
+}
+.flxCol {
+  display: flex;
+  flex-direction: column;
+}
+.flxCenter {
+  justify-content: center;
+  align-items: center;
+}
+.flxJustCenter {
+  justify-content: center;
+}
+.flxAlitCenter {
+  align-items: center;
+}
+.brand {
+  color: var(--brand-color);
+}
+.shadowWrapper {
+  display: inline-block;
+  position: relative;
+}
+.shadowWrapper::after {
+  position: absolute;
+  width: 70%;
+  height: 12%;
+  left: 12%;
+  border-radius: 50%;
+  z-index: 0;
+  bottom: 25%;
+  content: "";
+  box-shadow: 0 5px 2px rgba(0, 0, 0, 0.34);
+}
