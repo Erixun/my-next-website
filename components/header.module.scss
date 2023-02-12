@@ -24,7 +24,7 @@ header.primary {
           font-style: italic;
           font-weight: bold;
           font-size: clamp(15px, 1.1vw, 18px);
-          &:focus,
+          &:focus-visible,
           &:hover {
             text-decoration: overline underline;
           }

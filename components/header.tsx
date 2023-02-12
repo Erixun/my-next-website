@@ -1,4 +1,4 @@
-import styles from "./header.module.scss";
+import styles from "./Header.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import TheLightBulb from "./TheLightBulb";
 import LinkGoto from "./LinkGoto";
@@ -18,19 +18,16 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <LinkGoto id="footer" />
+                <LinkGoto id="Powers" />
               </li>
               <li>
-                <LinkGoto id="powers" />
+                <LinkGoto id="Currently" />
               </li>
               <li>
-                <LinkGoto id="currently" />
+                <LinkGoto id="Favorites" />
               </li>
               <li>
-                <LinkGoto id="favorites" />
-              </li>
-              <li>
-                <LinkGoto id="footer" />
+                <LinkGoto id="Footer" />
               </li>
             </ul>
           </nav>

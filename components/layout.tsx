@@ -1,19 +1,16 @@
 import Head from "next/head";
-import Image from "next/image";
 import Script from "next/script";
-import Header from "./header";
-
+import Header from "./Header";
 import styles from "./layout.module.scss";
-import utilStyles from "../styles/utils.module.scss";
 import Link from "next/link";
+import TheIntroduction from "./TheIntroduction";
 
 const name = "Erik Emanuel";
-export const siteTitle = "My Next Website";
+export const siteTitle = "erixun.me";
 
 export default function Layout({ children, home }) {
   return (
     <div className="app">
-      {/* className={styles.container}> */}
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -40,6 +37,7 @@ export default function Layout({ children, home }) {
 
       <Header />
 
+      {/* <TheIntroduction /> */}
       {/* <header className={styles.header}>
         {home ? (
           <>
@@ -79,7 +77,7 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
-      <footer id="footer">FOOTER</footer>
+      <footer id="Footer">FOOTER</footer>
     </div>
   );
 }

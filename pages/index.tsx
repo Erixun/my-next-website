@@ -4,14 +4,20 @@ import utilStyles from "../styles/utils.module.scss";
 import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import Date from "../components/date";
+import TheIntroduction from "../components/TheIntroduction";
 
 export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <Link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+        />
       </Head>
-      <section className={utilStyles.headingMd}>
+      <TheIntroduction />
+      {/* <section className={utilStyles.headingMd}>
         <p>[Your Self Introduction]</p>
         <p>
           (This is a sample website - you’ll be building a site like this in{" "}
@@ -31,11 +37,12 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>
+      </section> */}
     </Layout>
   );
 }
 
+//TODO: get skills data instead
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
   return {
