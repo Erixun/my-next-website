@@ -1,62 +1,28 @@
 import styles from "./header.module.scss";
 import utilStyles from "../styles/utils.module.scss";
 import TheLightBulb from "./TheLightBulb";
-import { useEffect, useState } from "react";
+import Script from "next/script";
+import Link from "next/link";
+import { useEffect } from "react";
+
+const LinkGoto = ({ id }) => (
+  <Link href={`#${id}`} scroll={false}>
+    {id}
+  </Link>
+);
 
 const Header = () => {
-  // const toggleLightMode = () => {
-  //   switchLightBulb();
-  //   switchLightMode();
-  // };
-
-  // const [powerOff, setPowerOff] = useState(true);
-  // // const lightBulb = useRef(null);
-
-  // const switchLightBulb = () => {
-  //   const lb = document.getElementById("light-bulb");
-  //   // const lb = lightBulb.current;
-  //   if (!lb) return;
-
-  //   lb.classList.toggle("off");
-  //   lb.blur();
-  //   if (lb.classList.contains("off")) {
-  //     //TODO: useRef
-  //     setPowerOff(true);
-  //     // emit("powerOff", true);
-  //   } else {
-  //     setPowerOff(false);
-  //     // emit("powerOff", false);
-  //   }
-  // };
-
-  // const switchLightMode = () => {
-  //   const classList = document.body.classList;
-  //   classList.toggle("dark");
-  //   storeLightMode(classList);
-  // };
-
-  // const HAS_LIGHTS_OFF = "hasLightsOff";
-  // const storeLightMode = (classList: DOMTokenList) => {
-  //   localStorage.setItem(HAS_LIGHTS_OFF, `${classList.contains("dark")}`);
-  // };
-  // //determines if the user has a set theme
-  // const detectColorScheme = () => {
-  //   //local storage is used to override OS theme settings
-  //   if (localStorage.getItem(HAS_LIGHTS_OFF) === "true") {
-  //     return true;
-  //   } else if (!window.matchMedia) {
-  //     //matchMedia method not supported
-  //     return false;
-  //   } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  //     //OS theme setting detected as dark
-  //     return true;
-  //   }
+  // const scrollTo = ({ target }) => {
+  //   console.log(target);
+  //   window.scrollTo({
+  //     top: document.getElementById(target.goto).offsetTop - 60,
+  //     behavior: "smooth",
+  //   });
   // };
   // useEffect(() => {
-  //   const prefersDark = detectColorScheme();
-  //   if (prefersDark) {
-  //     toggleLightMode();
-  //   }
+  //   document.querySelectorAll(".btn-goto").forEach((btn) => {
+  //     btn.addEventListener("click", scrollTo);
+  //   });
   // });
   return (
     <header id="top" className={styles.primary}>
@@ -64,35 +30,52 @@ const Header = () => {
         <section
           id="logo"
           className={[styles.logo, utilStyles.ltext, utilStyles.flx].join(" ")}
-          // className="logo ltext flx"
         >
           <h1>erixun.me</h1>
           <TheLightBulb />
-          {/* @powerOff="handleDarkness" /> */}
         </section>
         <section className={styles.mid}>
           <nav>
             <ul>
               <li>
-                <a href="#powers">
-                  {/*TODO: @click.prevent="scrollIntoView('powers')" */}
+                <LinkGoto id="footer" />
+              </li>
+              <li>
+                <Link href="#powers" scroll={false}>
                   Tech XP
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#currently">
+                <a href="#currently" data-goto="currently" className="btn-goto">
                   {/* @click.prevent="scrollIntoView('currently')" */}
-                  Currently
                 </a>
+                <Link href="#currently">Currently</Link>
               </li>
               <li>
-                <a href="#favorites">
+                <a href="#favorites" data-goto="favorites" className="btn-goto">
                   {/* @click.prevent="scrollIntoView('favorites')" */}
                   Favorites
                 </a>
               </li>
+              <li>
+                <a href="#footer" data-goto="footer" className="btn-goto">
+                  {/* @click.prevent="scrollIntoView('favorites')" */}
+                  Favorites
+                </a>
+              </li>
+              <li>
+                <Link href="#footer" scroll={false}>
+                  Footer
+                </Link>
+              </li>
             </ul>
           </nav>
+          {/* <Script>
+          const scrollIntoView = ({ target }) => {
+    console.log(target.ref);
+    document.getElementById(target.ref).scrollIntoView({ behavior: "smooth" });
+  };
+          </Script> */}
         </section>
         {/* <!-- <section className=""></section> --> */}
       </div>

@@ -37,6 +37,7 @@ export default function Layout({ children, home }) {
         }
       />
       <div id="overlay"></div>
+
       <Header />
 
       {/* <header className={styles.header}>
@@ -78,6 +79,7 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <footer id="footer">FOOTER</footer>
     </div>
   );
 }
