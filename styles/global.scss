@@ -329,6 +329,10 @@ body {
       gap: 2em;
       grid-template-columns: repeat(auto-fit, minmax(200px, 350px));
       justify-content: center;
+
+      li {
+        perspective: 1200px;
+      }
     }
 
     .skills-btn {
