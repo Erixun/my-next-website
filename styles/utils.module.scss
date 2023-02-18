@@ -84,6 +84,7 @@
 }
 .lgContainer {
   width: clamp(300px, 100%, var(--lg-width));
+  padding: 0 2rem;
   margin: 0 auto;
 }
 .flx {

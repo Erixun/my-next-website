@@ -1,17 +1,3 @@
-// @import url("/styles/header.module.scss");
-
-.container {
-  // max-width: 36rem;
-  // padding: 0 1rem;
-  // margin: 3rem auto 6rem;
-}
-
-// .header {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
 /* || HEADER STYLING */
 header.primary {
   padding: 0.5em 3vw;
@@ -33,7 +19,7 @@ header.primary {
         justify-content: center;
 
         a {
-          color: #008a00;
+          color: var(--brand-color);
           text-decoration: none;
           font-style: italic;
           font-weight: bold;

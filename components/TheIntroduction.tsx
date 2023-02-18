@@ -97,7 +97,7 @@ const TheIntroduction = () => {
               />
             </a>
           </li>
-          <li className="circle">
+          <li>
             <a
               href="https://github.com/Erixun"
               target="_blank"
@@ -109,7 +109,6 @@ const TheIntroduction = () => {
               />
             </a>
           </li>
-          {/* <!-- <li><i className="devicon-twitter-original"></i></li> --> */}
         </ul>
       </div>
     </section>

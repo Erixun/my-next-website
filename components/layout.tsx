@@ -3,7 +3,6 @@ import Script from "next/script";
 import Header from "./Header";
 import styles from "./layout.module.scss";
 import Link from "next/link";
-import TheIntroduction from "./TheIntroduction";
 
 const name = "Erik Emanuel";
 export const siteTitle = "erixun.me";
@@ -37,40 +36,6 @@ export default function Layout({ children, home }) {
 
       <Header />
 
-      {/* <TheIntroduction /> */}
-      {/* <header className={styles.header}>
-        {home ? (
-          <>
-            <Image
-              priority
-              src="/images/portrait-180x180.jpg"
-              className={utilStyles.borderCircle}
-              height={144}
-              width={144}
-              alt={name}
-            />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
-          </>
-        ) : (
-          <>
-            <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt={name}
-              />
-            </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/" className={utilStyles.colorInherit}>
-                {name}
-              </Link>
-            </h2>
-          </>
-        )}
-      </header> */}
       <main className={styles.container}>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
