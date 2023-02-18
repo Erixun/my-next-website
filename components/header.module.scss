@@ -1,6 +1,6 @@
 /* || HEADER STYLING */
 header.primary {
-  padding: 0.5em 3vw;
+  padding: 0.5em 0;
   z-index: 2000;
   background: linear-gradient(to right, var(--base-bgc), #f9f4e7);
   box-shadow: 0 -8px 20px 0 #d3d3d3a3;
@@ -36,7 +36,6 @@ header.primary {
     font-size: 1.1em;
     font-weight: bold;
     font-style: italic;
-    padding-left: 1vw;
     color: var(--brand-color);
   }
 }
