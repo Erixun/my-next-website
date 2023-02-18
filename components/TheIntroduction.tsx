@@ -29,7 +29,9 @@ const TheIntroduction = () => {
         </aside>
         <article className="flx-col flx-just-center">
           <header id="welcome-header" className="welcome-header">
-            <h2 className="brand ib">Welcome</h2>
+            <h2 className={[utilStyles.ib, utilStyles.brand].join(" ")}>
+              Welcome
+            </h2>
             <h3 className="ib">
               This is the homepage of Erik Emanuel, Swedish Web developer, or{" "}
               <em>Swebdev</em>
