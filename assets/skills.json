@@ -122,8 +122,14 @@
   },
   {
     "id": "nodejs",
-    "label": "NodeJS",
+    "label": "Node.js",
     "proficiency": "35",
+    "description": ""
+  },
+  {
+    "id": "nextjs",
+    "label": "Next.js",
+    "proficiency": "45",
     "description": ""
   },
   {
