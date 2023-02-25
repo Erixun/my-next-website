@@ -2,7 +2,6 @@ import BaseSkillCard from "./BaseSkillCard";
 import skills from "../assets/skills.json";
 
 const TheSkills = () => {
-  const showMore = false;
   return (
     <section id="Powers" className="main-section powers stand-out">
       <div className="lg-container">
@@ -18,15 +17,7 @@ const TheSkills = () => {
           {skills.map((skill, index) => (
             <BaseSkillCard key={index} data={skill} />
           ))}
-          {/* v-for="(skill, index) in skills"
-      :key="skill.id"
-      :data="skill"
-      v-show="index < SKILLS_MINIMUM || showMore" */}
         </ul>
-        {/* <button className="btn-secondary skills-btn"> */}
-        {/* @click="toggleShowState()"> */}
-        {/* {showMore ? "Show Less.." : "Show More..."}
-        </button> */}
       </div>
     </section>
   );
