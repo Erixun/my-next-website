@@ -1,4 +1,3 @@
-import { FunctionComponent } from "react";
 import {
   Html5OriginalIcon,
   Css3OriginalIcon,
@@ -66,10 +65,31 @@ const TechIcon = {
   bulma: BulmaPlainIcon,
 };
 
-const DevIconTech = (props) => {
-  const Icon = TechIcon[props.techId] ?? DeviconOriginalIcon;
+const TooDarkIcon = [
+  "bitbucket",
+  "github",
+  "nextjs",
+  "dotnetcore",
+  "mysql",
+  "visualstudio",
+  "jest",
+];
 
-  return <Icon className="devicon" size="100%" style={{ gridArea: "logo" }} />;
+const DevIconTech = ({ techId }) => {
+  const Icon = TechIcon[techId] ?? DeviconOriginalIcon;
+
+  const styles = {
+    gridArea: "logo",
+    ...(TooDarkIcon.includes(techId)
+      ? {
+          background: "#fcfaf0",
+          borderRadius: "3px",
+          padding: "2px 0",
+        }
+      : {}),
+  };
+
+  return <Icon className="devicon" size="100%" style={styles} />;
 };
 
 export default DevIconTech;
