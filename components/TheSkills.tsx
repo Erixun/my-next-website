@@ -3,10 +3,10 @@ import skills from "../assets/skills.json";
 
 const TheSkills = () => {
   return (
-    <section id="Powers" className="main-section powers stand-out">
+    <section id="Skills" className="main-section powers stand-out">
       <div className="lg-container">
         <header>
-          <h2>Technical Experience</h2>
+          <h2>Technical Skills</h2>
           <h3>(Relative Proficiencies)</h3>
         </header>
         <ul

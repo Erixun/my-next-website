@@ -308,6 +308,7 @@ body {
     }
   }
 
+  /* || Technical Experience */
   .powers {
     flex-direction: column;
     justify-content: center;
@@ -607,7 +608,7 @@ body {
 
 /* || ANIMATIONS */
 .flip {
-  animation: flip 1s linear;
+  animation: flip 700ms linear;
 }
 
 @keyframes flip {
@@ -746,5 +747,84 @@ h2:hover [emoji].flexes {
   }
   100% {
     transform: rotate(359deg);
+  }
+}
+
+/* || BOOKS SECTION */
+.card-grid {
+  display: flex;
+  padding: 3rem;
+  margin-top: 2rem;
+  overflow-x: scroll;
+  border-left: 4px solid;
+  border-right: 4px solid;
+  position: relative;
+
+  // &::after {
+  //   content: "";
+  //   position: sticky;
+  //   right: 0;
+  // }
+}
+.card-grid > article {
+  min-width: 300px;
+  min-height: 400px;
+  background: #e4e0df;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 15px;
+  transition: margin-left 300ms ease, transform 300ms ease; // z-index;
+  transform-origin: bottom;
+  box-shadow: -2rem 0 3rem -2rem #000;
+  position: relative;
+  rotate: -0.5deg;
+  // border: 1px solid;
+  background: url("https://m.media-amazon.com/images/I/51inQ8o4t9L._SY344_BO1,204,203,200_.jpg");
+  background-size: cover;
+
+  &.clean-code {
+    background: url("https://m.media-amazon.com/images/I/41xShlnTZTL.jpg");
+    background-size: cover;
+  }
+  &.pragmatic {
+    background: url("https://m.media-amazon.com/images/I/71f743sOPoL.jpg");
+    background-size: cover;
+  }
+  &.imposters {
+    background: url("https://bigmachine.io/images/imposter/imposter-second.jpg");
+    background-size: cover;
+  }
+  &.code-complete {
+    background: url("https://m.media-amazon.com/images/I/51FUYfErOXL.jpg");
+    background-size: cover;
+  }
+  &.typescript {
+    background: url("https://m.media-amazon.com/images/I/71JdK8LhJJL.jpg");
+    background-size: cover;
+  }
+  &.javascript {
+    background: url("https://m.media-amazon.com/images/I/71sz1KTSlqL.jpg");
+    background-size: cover;
+  }
+
+  &:not(:first-child) {
+    margin-left: -130px;
+  }
+
+  &:hover,
+  &:focus-visible {
+    transform: rotate(-5deg) translateY(-1rem);
+    transition-delay: 0;
+    & + article {
+      margin-left: unset;
+    }
+  }
+
+  &:first-child {
+    margin-left: auto;
+    box-shadow: -2rem 0 3rem -2rem #000;
+  }
+  &:last-child {
+    margin-right: auto;
   }
 }

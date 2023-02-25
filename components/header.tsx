@@ -18,14 +18,14 @@ const Header = () => {
           <nav>
             <ul>
               <li>
-                <LinkGoto id="Powers" />
+                <LinkGoto id="Skills" />
               </li>
               <li>
+                <LinkGoto id="Books" />
+              </li>
+              {/* <li>
                 <LinkGoto id="Currently" />
-              </li>
-              <li>
-                <LinkGoto id="Favorites" />
-              </li>
+              </li> */}
               <li>
                 <LinkGoto id="Footer" />
               </li>

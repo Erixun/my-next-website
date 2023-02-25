@@ -30,6 +30,7 @@ import {
   KubernetesPlainIcon,
   RubyOriginalIcon,
   BulmaPlainIcon,
+  ExpressOriginalIcon,
 } from "react-devicons";
 
 const TechIcon = {
@@ -63,6 +64,7 @@ const TechIcon = {
   kubernetes: KubernetesPlainIcon,
   ruby: RubyOriginalIcon,
   bulma: BulmaPlainIcon,
+  express: ExpressOriginalIcon,
 };
 
 const TooDarkIcon = [
@@ -73,6 +75,7 @@ const TooDarkIcon = [
   "mysql",
   "visualstudio",
   "jest",
+  "express",
 ];
 
 const DevIconTech = ({ techId }) => {

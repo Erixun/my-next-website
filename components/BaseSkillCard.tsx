@@ -11,10 +11,10 @@ const BaseSkillCard = ({ data }) => {
       card.classList.toggle("flip");
       setTimeout(() => {
         setIsFlipped(!isFlipped);
-      }, 500);
+      }, 350);
       setTimeout(() => {
         card.classList.toggle("flip");
-      }, 1000);
+      }, 700);
     }
   };
 

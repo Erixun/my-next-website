@@ -4,6 +4,7 @@ import { getSortedPostsData } from "../lib/posts";
 import Link from "next/link";
 import TheIntroduction from "../components/TheIntroduction";
 import TheSkills from "../components/TheSkills";
+import TheBookShelf from "../components/TheBookShelf";
 
 export default function Home({ allPostsData }) {
   return (
@@ -18,6 +19,8 @@ export default function Home({ allPostsData }) {
       </Head>
       <TheIntroduction />
       <TheSkills />
+      <TheBookShelf />
+      {/* <TheBookShelf /> */}
     </Layout>
   );
 }

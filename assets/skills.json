@@ -30,6 +30,12 @@
     "description": "An open-source, front end, JS library maintained by Facebook, used for building user interfaces or UI components. It can serve as a base in the development of single-page or mobile applications."
   },
   {
+    "id": "express",
+    "label": "Express.js",
+    "proficiency": "65",
+    "description": "Express is a fast, unopinionated, minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. "
+  },
+  {
     "id": "git",
     "label": "Git",
     "proficiency": "70",
@@ -124,13 +130,13 @@
     "id": "nodejs",
     "label": "Node.js",
     "proficiency": "35",
-    "description": ""
+    "description": "A back-end runtime environment that executes JavaScript code outside a web browser. It is synchronous and event-driven, designed to build scalable network applications."
   },
   {
     "id": "nextjs",
     "label": "Next.js",
     "proficiency": "45",
-    "description": ""
+    "description": "Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites. "
   },
   {
     "id": "angularjs",
@@ -166,18 +172,6 @@
     "id": "ruby",
     "label": "Ruby",
     "proficiency": "20",
-    "description": ""
-  },
-  {
-    "id": "bulma",
-    "label": "Bulma",
-    "proficiency": "10",
-    "description": ""
-  },
-  {
-    "id": "kubernetes",
-    "label": "Kubernetes",
-    "proficiency": "10",
     "description": ""
   }
 ]
