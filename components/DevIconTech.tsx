@@ -31,6 +31,7 @@ import {
   RubyOriginalIcon,
   BulmaPlainIcon,
   ExpressOriginalIcon,
+  PythonOriginalIcon,
 } from "react-devicons";
 
 const TechIcon = {
@@ -65,6 +66,7 @@ const TechIcon = {
   ruby: RubyOriginalIcon,
   bulma: BulmaPlainIcon,
   express: ExpressOriginalIcon,
+  python: PythonOriginalIcon,
 };
 
 const TooDarkIcon = [

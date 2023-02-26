@@ -1,5 +1,5 @@
 import BaseSkillCard from "./BaseSkillCard";
-import skills from "../assets/skills.json";
+import topSkills from "../assets/skills.top.json";
 
 const TheSkills = () => {
   return (
@@ -14,7 +14,7 @@ const TheSkills = () => {
           className="skill-cards"
           role="presentation"
         >
-          {skills.map((skill, index) => (
+          {topSkills.map((skill, index) => (
             <BaseSkillCard key={index} data={skill} />
           ))}
         </ul>

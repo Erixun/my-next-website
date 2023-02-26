@@ -60,6 +60,12 @@
     "description": "A programming language that conforms to ECMAScript and one of the core web-technologies. It is high-level, JIT-compiled with dynamic typing and first-class functions."
   },
   {
+    "id": "python",
+    "label": "Python",
+    "proficiency": "30",
+    "description": " A high-level, general-purpose programming language that is dynamically typed and garbage-collected. It uses significant indentation with emphasis on code readability."
+  },
+  {
     "id": "bitbucket",
     "label": "Bitbucket",
     "proficiency": "65",

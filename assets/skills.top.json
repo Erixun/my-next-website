@@ -1,0 +1,50 @@
+[
+  {
+    "id": "react",
+    "label": "React.js",
+    "proficiency": "50",
+    "description": "An open-source, front end, JS library maintained by Facebook, used for building user interfaces or UI components. It can serve as a base in the development of single-page or mobile applications."
+  },
+  {
+    "id": "nextjs",
+    "label": "Next.js",
+    "proficiency": "40",
+    "description": "Next.js is an open-source web development framework created by Vercel enabling React-based web applications with server-side rendering and generating static websites. "
+  },
+  {
+    "id": "nodejs",
+    "label": "Node.js",
+    "proficiency": "55",
+    "description": "A back-end runtime environment that executes JavaScript code outside a web browser. It is synchronous and event-driven, designed to build scalable network applications."
+  },
+  {
+    "id": "express",
+    "label": "Express.js",
+    "proficiency": "65",
+    "description": "Express is a fast, unopinionated, minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. "
+  },
+  {
+    "id": "typescript",
+    "label": "TypeScript",
+    "proficiency": "65",
+    "description": "A programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language."
+  },
+  {
+    "id": "javascript",
+    "label": "JavaScript",
+    "proficiency": "80",
+    "description": "A programming language that conforms to ECMAScript and one of the core web-technologies. It is high-level, JIT-compiled with dynamic typing and first-class functions."
+  },
+  {
+    "id": "python",
+    "label": "Python",
+    "proficiency": "25",
+    "description": " A high-level, general-purpose programming language that is dynamically typed and garbage-collected. It uses significant indentation with emphasis on code readability."
+  },
+  {
+    "id": "azure",
+    "label": "Azure",
+    "proficiency": "30",
+    "description": "A cloud computing platform operated by Microsoft that provides access, management, and development of applications and services via around the world-distributed data centers."
+  }
+]
