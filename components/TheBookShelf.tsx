@@ -5,69 +5,54 @@ const TheBookShelf = () => {
         <header>
           <h2 style={{ borderBottom: "4px solid" }}>Recommended Books</h2>
         </header>
-        {/* <ul
-          v-if="skills.length > 0"
-          className="skill-cards"
-          role="presentation"
-        >
-          {skills.map((skill, index) => (
-            <BaseSkillCard key={index} data={skill} />
-          ))}
-        </ul> */}
         <div className="card-grid">
           <article className="book clean-code" tabIndex={0}>
-            {/* <h3>Book title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              obcaecati, maxime nesciunt assumenda harum delectus reprehenderit
-              numquam veritatis nam odio quisquam fugiat nostrum quas aliquam
-              molestiae? Reiciendis vitae aut ea.
-            </p> */}
+            <a
+              href="https://www.goodreads.com/book/show/3735293-clean-code"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", height: "100%" }}
+            ></a>
           </article>
           <article className="book imposters" tabIndex={0}>
-            {/* <h3>Book title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              obcaecati, maxime nesciunt assumenda harum delectus reprehenderit
-              numquam veritatis nam odio quisquam fugiat nostrum quas aliquam
-              molestiae? Reiciendis vitae aut ea.
-            </p> */}
+            <a
+              href="https://bigmachine.io/products/the-imposters-handbook/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", height: "100%" }}
+            ></a>
           </article>
           <article className="book pragmatic" tabIndex={0}>
-            {/* <h3>Book title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              obcaecati, maxime nesciunt assumenda harum delectus reprehenderit
-              numquam veritatis nam odio quisquam fugiat nostrum quas aliquam
-              molestiae? Reiciendis vitae aut ea.
-            </p> */}
+            <a
+              href="https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", height: "100%" }}
+            ></a>
           </article>
           <article className="book code-complete" tabIndex={0}>
-            {/* <h3>Book title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              obcaecati, maxime nesciunt assumenda harum delectus reprehenderit
-              numquam veritatis nam odio quisquam fugiat nostrum quas aliquam
-              molestiae? Reiciendis vitae aut ea.
-            </p> */}
+            <a
+              href="https://www.goodreads.com/book/show/4845.Code_Complete"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", height: "100%" }}
+            ></a>
           </article>
           <article className="book typescript" tabIndex={0}>
-            {/* <h3>Book title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              obcaecati, maxime nesciunt assumenda harum delectus reprehenderit
-              numquam veritatis nam odio quisquam fugiat nostrum quas aliquam
-              molestiae? Reiciendis vitae aut ea.
-            </p> */}
+            <a
+              href="https://www.goodreads.com/book/show/45362865-programming-typescript"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", height: "100%" }}
+            ></a>
           </article>
           <article className="book javascript" tabIndex={0}>
-            {/* <h3>Book title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              obcaecati, maxime nesciunt assumenda harum delectus reprehenderit
-              numquam veritatis nam odio quisquam fugiat nostrum quas aliquam
-              molestiae? Reiciendis vitae aut ea.
-            </p> */}
+            <a
+              href="https://www.goodreads.com/book/show/61157620-javascript"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "block", height: "100%" }}
+            ></a>
           </article>
         </div>
       </div>
