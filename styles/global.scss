@@ -95,7 +95,7 @@ body {
       border-bottom: 1px solid var(--default-border-color);
     }
 
-    [emoji] {
+    [data-emoji="true"] {
       display: inline-block;
     }
   }
@@ -129,7 +129,7 @@ body {
   ul,
   ol {
     list-style: none;
-    margin: 1.5em 0 0.8em;
+    margin: 1em 0 0.8em;
     padding: 0;
   }
 
@@ -354,7 +354,7 @@ body {
     display: block;
     position: relative;
     min-height: 100vh;
-    background-image: url("/public/images/hometown-2048x1152.webp");
+    background-image: url("../public/images/hometown-2048x1152.webp");
     background-attachment: fixed;
     @media only screen and (max-device-width: 1366px) {
       background-attachment: scroll;
@@ -425,7 +425,8 @@ body {
     left: -10%;
     top: -48%;
     transform: rotate(-5deg);
-    margin-top: -360px;
+    margin-top: -315px;
+    margin-bottom: 75px;
   }
   .fade-in-right {
     animation: 1s fade-in-right ease 0s forwards;
@@ -526,7 +527,16 @@ body {
       justify-content: space-evenly;
       gap: 0.5rem 2rem;
       .podcast {
-        width: clamp(110px, 11vw, 180px);
+        width: clamp(125px, 11vw, 180px);
+        height: 100%;
+        border-radius: 0.8rem;
+        &:hover {
+          background: var(--podcast-hover-bgc);
+        }
+        &:active {
+          color: var(--accented-text-color);
+          outline: 2px solid;
+        }
       }
     }
     .podcast * {
@@ -556,15 +566,7 @@ body {
     .podcast-link {
       padding: 0.5rem;
       padding-bottom: 0.5rem;
-      border-radius: 0.8rem;
       padding-bottom: 1rem;
-      &:hover {
-        background: var(--podcast-hover-bgc);
-      }
-      &:active {
-        color: var(--accented-text-color);
-        outline: 2px solid;
-      }
     }
   }
 }
@@ -573,6 +575,7 @@ body {
 .app > footer {
   background-color: var(--footer-bgc);
   padding: 3em 3em 2em;
+  text-align: left;
   .lg-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -737,7 +740,7 @@ h2:hover [emoji].flexes {
   }
 }
 
-.currently-workingon:hover [emoji].rotates {
+.currently-workingon:hover [data-emoji].rotates {
   animation: emoji-rotate 1.5s linear 3;
 }
 
