@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 const TheLightBulb = () => {
   const toggleLightMode = () => {
@@ -20,7 +20,6 @@ const TheLightBulb = () => {
     }
   };
 
-  // const [powerOff, setPowerOff] = useState(false);
   const lightBulb = useRef(null);
 
   const switchLightBulb = () => {
@@ -30,14 +29,6 @@ const TheLightBulb = () => {
 
     lb.classList.toggle("off");
     lb.blur();
-    // if (lb.classList.contains("off")) {
-    //   //TODO: useRef
-    //   setPowerOff(true);
-    //   // emit("powerOff", true);
-    // } else {
-    //   setPowerOff(false);
-    //   // emit("powerOff", false);
-    // }
   };
 
   const switchLightMode = () => {
@@ -79,7 +70,6 @@ const TheLightBulb = () => {
         id="light-bulb"
         title="light-bulb"
         onClick={toggleLightMode}
-        // @click="toggleLightMode()"
         data-icon="💡"
       >
         💡

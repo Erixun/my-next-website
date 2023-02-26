@@ -2,10 +2,6 @@ import { useEffect, useRef } from "react";
 import utilStyle from "../styles/utils.module.scss";
 
 const TheCurrentlyWorkingOn = () => {
-  const scrollIntoView = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
-
   useEffect(() => {
     const rightFadeObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -30,7 +26,6 @@ const TheCurrentlyWorkingOn = () => {
           " "
         )}
       >
-        {/* className="md-container flx"> */}
         <h2>Currently...</h2>
         <article className="currently-learning ctext">
           <h3>

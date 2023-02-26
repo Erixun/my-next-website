@@ -17,10 +17,6 @@ const TheUpTopButton = () => {
       document.documentElement.scrollTop > limit;
 
     window.onscroll = scrollFunction;
-
-    // const scrollUp = () => {
-    //   document.getElementById("top")?.scrollIntoView({ behavior: "smooth" });
-    // };
   });
   return (
     <span>
@@ -30,7 +26,6 @@ const TheUpTopButton = () => {
         href="#top"
         title="Scroll back up"
       >
-        {/* @click.prevent="scrollUp" */}
         <svg
           width="256px"
           height="256px"
