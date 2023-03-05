@@ -1,8 +1,8 @@
 import Head from "next/head";
-import Header from "./Header";
+import Header from "./Header.js";
 import styles from "./layout.module.scss";
 import Link from "next/link";
-import TheUpTopButton from "./TheUpTopButton";
+import TheUpTopButton from "./TheUpTopButton.js";
 
 const name = "Erik Emanuel";
 export const siteTitle = "erixun.me";
