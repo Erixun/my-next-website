@@ -9,12 +9,12 @@ import TheBlockQuote from "../components/TheBlockQuote";
 import TheCurrentlyWorkingOn from "../components/TheCurrentlyWorkingOn";
 import ThePodcasts from "../components/ThePodcasts";
 
-export default function Home({ allPostsData }) {
+export default function Home() {
   return (
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
-        <Link rel="stylesheet" href="devicon.min.css" />
+        {/* <Link rel="stylesheet" href="devicon.min.css" /> */}
       </Head>
       <TheIntroduction />
       <TheSkills />
